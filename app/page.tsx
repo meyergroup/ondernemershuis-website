@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <div className="space-y-16">
       {/* Hero Section with background image and green overlay */}
-<section className="relative h-[500px] flex items-center justify-center text-white">
+<section className="relative h-[400px] md:h-[500px] flex items-center justify-center text-white">
   {/* Background image */}
   <div className="absolute inset-0 z-0">
     <Image
@@ -42,7 +42,7 @@ export default function HomePage() {
 
       {/* Community Section */}
       <section className="py-16">
-        <div className="section-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">De Community</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -55,7 +55,7 @@ export default function HomePage() {
 
       {/* About Section */}
       <section className="py-16 bg-gray-50">
-        <div className="section-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Over het Ondernemershuis</h2>
@@ -86,7 +86,7 @@ export default function HomePage() {
 
       {/* E-Scan CTA */}
       <section className="py-16">
-        <div className="section-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#90EE90] text-white rounded-2xl p-8 md:p-12 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ontdek Gratis Jouw Entrepreneurial Index</h2>
             <p className="text-black text-xl mb-8 opacity-90">Start de E-Scan en krijg inzicht in jouw ondernemersvaardigheden</p>
@@ -99,7 +99,7 @@ export default function HomePage() {
 
       {/* Online Academie */}
       <section className="py-16 bg-gray-50">
-        <div className="section-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96">
               <Image
@@ -129,7 +129,7 @@ export default function HomePage() {
 
       {/* Founder Bio */}
       <section className="py-16">
-        <div className="section-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Mila Bahadoersing</h2>
@@ -148,7 +148,7 @@ export default function HomePage() {
                 <p>Oprichter & CEO, Ondernemershuis</p>
               </div>
             </div>
-<div className="relative w-[380px] h-[578px]">
+<div className="relative w-full h-[400px] sm:h-[500px] md:h-[578px]">
   <Image
     src="/milaB-2.jpg"
     alt="Mila Bahadoersing"
