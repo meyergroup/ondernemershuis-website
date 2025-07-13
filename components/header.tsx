@@ -10,10 +10,11 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Nieuws", href: "/nieuws" },
   { name: "Community", href: "/community" },
-  { name: "Coworking", href: "/coworking" },
+  // { name: "Coworking", href: "/coworking" },
   { name: "Zakendoen", href: "/zakendoen" },
+  { name: "LC BusinessClub", href: "/lcbusinessclub" },
   { name: "Handelmissie", href: "/handelmissie" },
-  { name: "Agenda", href: "/agenda" },
+  // { name: "Agenda", href: "/agenda" },
   { name: "Young Entrepreneurs", href: "/young-entrepreneurs" },
   { name: "Vacatures in Suriname", href: "/vacatures-in-suriname" },
   // { name: "Online Academie", href: "/online-academie" },
@@ -62,7 +63,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`nav-link block ${pathname === item.href ? "active" : ""}`}
+                  className={`nav-link block whitespace-nowrap overflow-hidden text-ellipsis ${pathname === item.href ? "active" : ""}`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}

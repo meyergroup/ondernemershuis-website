@@ -12,7 +12,7 @@ const communityImages = [
 
 export default function HomePage() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-16 overflow-x-hidden">
       {/* Hero Section with background image and green overlay */}
 <section className="relative h-[400px] md:h-[500px] flex items-center justify-center text-white">
   {/* Background image */}
@@ -30,10 +30,12 @@ export default function HomePage() {
 
   {/* Content */}
   <div className="relative z-20 text-center max-w-4xl px-4">
-    <h1 className="text-4xl md:text-6xl font-bold mb-6">Welkom bij het Ondernemershuis</h1>
-    <p className="text-xl md:text-2xl mb-8">
-      De community voor ondernemers in Suriname. Netwerken, leren, groeien en samen ondernemen.
-    </p>
+<h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-6 break-words text-white">
+  Welkom bij het Ondernemershuis
+</h1>
+  <p className="text-base sm:text-lg md:text-2xl mb-8 break-words">
+    De community voor ondernemers in Suriname. Netwerken, leren, groeien en samen ondernemen.
+  </p>
     <Link href="/aanmelden">
       <Button className="brand-button text-lg px-8 py-4">Aanmelden</Button>
     </Link>
@@ -88,8 +90,12 @@ export default function HomePage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#90EE90] text-white rounded-2xl p-8 md:p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ontdek Gratis Jouw Entrepreneurial Index</h2>
-            <p className="text-black text-xl mb-8 opacity-90">Start de E-Scan en krijg inzicht in jouw ondernemersvaardigheden</p>
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center break-words">
+    Ontdek Gratis Jouw Entrepreneurial Index
+  </h2>
+              <p className="text-black text-base sm:text-lg md:text-xl mb-8 opacity-90 break-words text-center">
+    Start de E-Scan en krijg inzicht in jouw ondernemersvaardigheden
+  </p>
             <Button className="bg-[#06402B] text-[#fff] hover:bg-gray-100 px-8 py-4 text-lg font-medium">
               Start E-Scan
             </Button>
