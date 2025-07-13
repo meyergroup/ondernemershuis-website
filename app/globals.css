@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-blue: #0056a6;
+  --brand-blue-hover: #004494;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold text-gray-900;
+  }
+
+  .brand-button {
+    background-color: theme("colors.brand"); /* #0056a6 */
+    @apply text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+  }
+  .brand-button:hover {
+    background-color: theme("colors.brand-hover"); /* #004494 */
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-700 hover:text-brand px-3 py-2 text-sm font-medium transition-colors duration-200;
+  }
+
+  .nav-link.active {
+    @apply text-brand font-semibold;
+  }
+}
